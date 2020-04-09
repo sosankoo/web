@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Arrays!!!</title>
+	<script type="text/javascript">
+		var students = new Array("virat", "kohli", "shubham", "shivam", "sundaram");
+		Array.prototype.displayItems=function(){
+			for (i=0;i<this.length;i++){
+				document.write(this[i] + "<br />");
+			}
+		}	
+		document.write("students array<br />");
+		students.displayItems();
+		document.write("<br />The number of items in students array is " + students.length + "<br />");
+		document.write("<br />The SORTED students array<br />");
+		students.sort();
+		students.displayItems();
+		document.write("<br />The REVERSED students array<br />");
+		students.reverse();
+		students.displayItems();
+	</script>
+</head>
+<body>
+</body>
+</html>

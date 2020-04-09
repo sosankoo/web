@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using arrays in javascript</h2>
+
+<p>implementation of array in javascript</p>
+
+<p id="demo"></p>
+
+<script>
+var cricketers, text, fLen, i;
+cricketers = ["virat kohli", "sachin tendulkar", " ms dhoni", "shubham kohli"];
+fLen = cricketers.length;
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + cricketers[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
